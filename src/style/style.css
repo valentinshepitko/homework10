@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1852px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width:100%;
+    background-color: white;
+    z-index: 2;
+}
+
+.main {
+    padding-top: 120px;
+}
+
+main .container{
+    display: flex;
+}
+
+aside {
+    width: 40%;
+}
+
+.aside-nav {
+    position: fixed;
+    counter-reset: navcounter;
+    list-style: none;
+}
+.aside-nav li {
+    counter-increment: navcounter;
+    padding-left: 30px;
+    position: relative;
+}
+
+.aside-nav li::before {
+    content: counter(navcounter);
+    font-size: 12px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bgimage {
+    position: absolute;
+    z-index: -1;
+    right: -30px;
+    top: 100px;
+}
+
+.content {
+    width: 60%;
+    position: relative;
+}
+
+.navigation {
+    font-family: Roboto, sans-serif;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.logo {
+    float: right;
+    max-width: 180px;
+}
+
+p {
+    font-size: 36px;
+    padding-top: 40px;
+}
+
+.list {
+    list-style: none;
+}
+
+
+.list span,aside li {
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+}
+
+.text {
+    padding-bottom: 50px;
+}
+
+mark {
+    background-color: lightgrey;
+}
